@@ -1,37 +1,65 @@
-﻿using System.Collections;
+﻿using JetBrains.Annotations;
+using System.Collections;
+using UnityEditor.Tilemaps;
 using UnityEngine;
 
-//animacje
 public class PlayerMovement : MonoBehaviour
 {
-    private const string SPEED = "Speed";
-    private const string IS_MOVING = "IsMoving";
-    private const string IS_JUMPING = "IsJumping";
-    private const string IS_FALLING = "IsFalling";
-    private const string IS_DASHING = "IsDashing";
-    private const string WALL_SLIDING = "IsWallSliding";
+    [Header("Movement")]
+    public float moveCooldown = 0.5f;
+
+    [Header("References")]
+    public Rigidbody2D rb;
+
+    private float moveTimer = 0f;
+
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.D))
+        if(moveTimer > 0)
         {
-            float x = 0.16f;
-            transform.position += new Vector3(x, 0, 0);
+            moveTimer -= Time.deltaTime;
+            return;
         }
-        if (Input.GetKeyDown(KeyCode.A))
+
+        Vector3 targetPosition = transform.position;
+        if (Input.GetAxisRaw("Horizontal") != 0)
         {
-            float x = 0.16f;
-            transform.position -= new Vector3(x, 0, 0);
+            targetPosition.x += Input.GetAxisRaw("Horizontal") * 0.16f;
+            moveTimer = moveCooldown;
         }
-        if (Input.GetKeyDown(KeyCode.W))
+        if(Input.GetAxisRaw("Vertical") != 0)
         {
-            float y = 0.16f;
-            transform.position += new Vector3(0, y, 0);
+            targetPosition.y += Input.GetAxisRaw("Vertical") * 0.16f;
+            moveTimer = moveCooldown;
         }
-        if (Input.GetKeyDown(KeyCode.S))
+        RaycastHit2D hit = Physics2D.Raycast(targetPosition, Vector2.up, 0.01f);
+        if (hit.collider == null)
         {
-            float y = 0.16f;
-            transform.position -= new Vector3(0, y, 0);
+            transform.position = targetPosition;
         }
+        //if (rb != null)
+        //{
+        //    if (Input.GetAxis("Horizontal") > 0)
+        //    {
+        //        rb.MovePosition(rb.position + Vector2.right * moveSpeed * Time.deltaTime);
+        //    }
+        //    else if (Input.GetAxis("Horizontal") < 0)
+        //    {
+        //        rb.MovePosition(rb.position + Vector2.left * moveSpeed * Time.deltaTime);
+        //    }
+        //    if (Input.GetAxis("Vertical") > 0)
+        //    {
+        //        rb.MovePosition(rb.position + Vector2.up * moveSpeed * Time.deltaTime);
+        //    }
+        //    else if (Input.GetAxis("Vertical") < 0)
+        //    {
+        //        rb.MovePosition(rb.position + Vector2.down * moveSpeed * Time.deltaTime);
+        //    }
+        //}
     }
 }
