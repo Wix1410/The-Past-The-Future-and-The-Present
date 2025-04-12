@@ -97,7 +97,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2814045447821496120}
   - component: {fileID: 9082592791118635217}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platform 1x1 with walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -8,15 +8,11 @@ public class PlayerMovement : MonoBehaviour
     [Header("Movement")]
     public float moveCooldown = 0.5f;
 
-    [Header("References")]
-    public Rigidbody2D rb;
+    [Header("Settings")]
+    public LayerMask wallLayer;
+    public LayerMask destructableLayer;
 
     private float moveTimer = 0f;
-
-    private void Start()
-    {
-        rb = GetComponent<Rigidbody2D>();
-    }
 
     private void Update()
     {
@@ -32,34 +28,15 @@ public class PlayerMovement : MonoBehaviour
             targetPosition.x += Input.GetAxisRaw("Horizontal") * 0.16f;
             moveTimer = moveCooldown;
         }
-        if(Input.GetAxisRaw("Vertical") != 0)
+        if (Input.GetAxisRaw("Vertical") != 0)
         {
             targetPosition.y += Input.GetAxisRaw("Vertical") * 0.16f;
             moveTimer = moveCooldown;
         }
-        RaycastHit2D hit = Physics2D.Raycast(targetPosition, Vector2.up, 0.01f);
+        RaycastHit2D hit = Physics2D.Raycast(targetPosition, Vector2.up, 0.01f, wallLayer);
         if (hit.collider == null)
         {
             transform.position = targetPosition;
         }
-        //if (rb != null)
-        //{
-        //    if (Input.GetAxis("Horizontal") > 0)
-        //    {
-        //        rb.MovePosition(rb.position + Vector2.right * moveSpeed * Time.deltaTime);
-        //    }
-        //    else if (Input.GetAxis("Horizontal") < 0)
-        //    {
-        //        rb.MovePosition(rb.position + Vector2.left * moveSpeed * Time.deltaTime);
-        //    }
-        //    if (Input.GetAxis("Vertical") > 0)
-        //    {
-        //        rb.MovePosition(rb.position + Vector2.up * moveSpeed * Time.deltaTime);
-        //    }
-        //    else if (Input.GetAxis("Vertical") < 0)
-        //    {
-        //        rb.MovePosition(rb.position + Vector2.down * moveSpeed * Time.deltaTime);
-        //    }
-        //}
     }
 }
