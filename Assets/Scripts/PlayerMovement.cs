@@ -22,18 +22,18 @@ public class PlayerMovement : MonoBehaviour
         }
 
         Vector3 targetPosition = transform.position;
-        if (Input.GetAxisRaw("Horizontal") != 0)
-        {
+        if (Input.GetAxisRaw("Horizontal") != 0 && Input.GetAxisRaw("Vertical") == 0)
+        { 
             targetPosition.x += Input.GetAxisRaw("Horizontal") * 0.16f;
             moveTimer = moveCooldown;
         }
-        if (Input.GetAxisRaw("Vertical") != 0)
+        if (Input.GetAxisRaw("Vertical") != 0 && Input.GetAxisRaw("Horizontal") == 0)
         {
             targetPosition.y += Input.GetAxisRaw("Vertical") * 0.16f;
             moveTimer = moveCooldown;
         }
-        RaycastHit2D hit = Physics2D.Raycast(targetPosition, Vector2.up, 0.01f, wallLayer);
-        if (hit.collider == null)
+        RaycastHit2D hitWall = Physics2D.Raycast(targetPosition, Vector2.up, 0.01f, wallLayer);
+        if (hitWall.collider == null)
         {
             transform.position = targetPosition;
         }
