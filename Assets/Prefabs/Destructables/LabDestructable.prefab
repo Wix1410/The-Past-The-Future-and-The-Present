@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6821013152180688410}
   - component: {fileID: 6264100444117199135}
-  - component: {fileID: 7404887632831055742}
+  - component: {fileID: 613858048266883106}
   m_Layer: 10
   m_Name: LabDestructable
   m_TagString: Untagged
@@ -80,7 +80,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.16, y: 0.16}
   m_EdgeRadius: 0
---- !u!114 &7404887632831055742
+--- !u!114 &613858048266883106
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -89,9 +89,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 4756044030758123119}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c799df68ac90c743b82811c9d7d7664, type: 3}
+  m_Script: {fileID: 11500000, guid: 3978413802b90824590e2f0c4d6d2786, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 2048
 --- !u!1 &6007166529573252395
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,7 +10,6 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Settings")]
     public LayerMask wallLayer;
-    public LayerMask destructableLayer;
 
     private float moveTimer = 0f;
 
