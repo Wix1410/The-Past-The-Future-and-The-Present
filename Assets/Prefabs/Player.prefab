@@ -94,12 +94,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveCooldown: 0.1
+  movePushableCooldown: 0.1
   wallLayer:
     serializedVersion: 2
-    m_Bits: 8
-  movableLayer:
-    serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 520
 --- !u!1 &2284313721499056996
 GameObject:
   m_ObjectHideFlags: 0

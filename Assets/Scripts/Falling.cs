@@ -1,9 +1,13 @@
+using TMPro;
 using UnityEngine;
 
 public class Falling : MonoBehaviour
 {
     [Header("Movement")]
     public float moveCooldown = 0.5f;
+
+    [Header("Settings")]
+    public LayerMask wallLayer;
 
     private float moveTimer = 0f;
 
