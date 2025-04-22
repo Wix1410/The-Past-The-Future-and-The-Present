@@ -13,15 +13,13 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask wallLayer;
 
     private float moveTimer = 0f;
-
     private void Update()
     {
-        if(moveTimer > 0)
+        if (moveTimer > 0)
         {
             moveTimer -= Time.deltaTime;
             return;
         }
-
         Vector3 targetPosition = transform.position;
         if (Input.GetAxisRaw("Horizontal") != 0 && Input.GetAxisRaw("Vertical") == 0)
         { 
