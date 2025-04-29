@@ -15,6 +15,10 @@ public class PlayerMovement : MonoBehaviour
     private float moveTimer = 0f;
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.F10))
+        {
+            Saveble.LoadAll();
+        }
         if (moveTimer > 0)
         {
             moveTimer -= Time.deltaTime;

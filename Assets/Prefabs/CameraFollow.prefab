@@ -231,3 +231,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camera: {fileID: 2636533874814997106}
   player: {fileID: 0}
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 2048
