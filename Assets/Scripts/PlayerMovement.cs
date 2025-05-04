@@ -1,7 +1,11 @@
-﻿using UnityEngine;
+﻿using UnityEditor;
+using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [Header("Bindings")]
+    public GameObject pauseMenu;
+
     [Header("Movement")]
     public float moveCooldown = 0.5f;
     public float movePushableCooldown = 0.5f;
@@ -12,6 +16,11 @@ public class PlayerMovement : MonoBehaviour
     private float moveTimer = 0f;
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Time.timeScale = 0;
+            pauseMenu.gameObject.SetActive(true);
+        }
         if (Input.GetKeyDown(KeyCode.F10))
         {
             Saveble.LoadAll();
