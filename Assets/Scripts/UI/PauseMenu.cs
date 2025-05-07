@@ -35,7 +35,7 @@ public class PauseMenu : MonoBehaviour
 
     private void RestartGame()
     {
-        throw new NotImplementedException();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     private void Settings()

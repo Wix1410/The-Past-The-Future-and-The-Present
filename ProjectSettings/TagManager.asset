@@ -11,14 +11,14 @@ TagManager:
   - Wall
   - Water
   - UI
-  - CheckPonit
+  - CheckPoint
   - Chest
   - Computer
   - Movable
   - Destructable
   - Player
   - Camera
-  - 
+  - Finished
   - 
   - 
   - 

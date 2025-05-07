@@ -135,6 +135,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: []
   spriteRenderer: {fileID: 0}
+  collider: {fileID: 2630022242387636283}
 --- !u!61 &2630022242387636283
 BoxCollider2D:
   m_ObjectHideFlags: 0

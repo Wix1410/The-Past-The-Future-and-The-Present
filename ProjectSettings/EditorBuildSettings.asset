@@ -8,12 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/InterfaceMenus/MainMenu.unity
     guid: 480d03d623d21b343adf770965d044c9
-  - enabled: 0
-    path: Assets/Scenes/InterfaceMenus/SettingsMenu.unity
-    guid: 8ccf1bd66025cc14299daa11eaf5bb98
   - enabled: 1
     path: Assets/Scenes/InterfaceMenus/CreditsMenu.unity
     guid: e80641ab03a0524478bb0eb5182a585a
+  - enabled: 0
+    path: Assets/Scenes/InterfaceMenus/SettingsMenu.unity
+    guid: 8ccf1bd66025cc14299daa11eaf5bb98
   - enabled: 1
     path: Assets/Scenes/InterfaceMenus/TimePeriodChooseMenu.unity
     guid: 2a0db35668fc3204fb1d1314c7385ac0

@@ -1,10 +1,12 @@
 ﻿using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Bindings")]
     public GameObject pauseMenu;
+    public Rigidbody2D rb;
 
     [Header("Movement")]
     public float moveCooldown = 0.5f;
@@ -16,6 +18,10 @@ public class PlayerMovement : MonoBehaviour
     private float moveTimer = 0f;
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Time.timeScale = 0;
@@ -41,10 +47,14 @@ public class PlayerMovement : MonoBehaviour
             targetPosition.y += Input.GetAxisRaw("Vertical") * 0.16f;
             moveTimer = moveCooldown;
         }
-        RaycastHit2D hit = Physics2D.Raycast(targetPosition, Vector2.up, 0.01f, wallLayer);
-        if (hit.collider == null)
+        RaycastHit2D hit = Physics2D.Raycast(targetPosition, Vector2.up, 0.01f);
+        if (hit.collider == null )
         {
-            transform.position = targetPosition;
+            if(targetPosition != transform.position)
+            {
+                //transform.position = targetPosition;
+                rb.MovePosition(targetPosition);
+            }
         }
         else
         {
@@ -59,7 +69,32 @@ public class PlayerMovement : MonoBehaviour
                 {
                     moveTimer = movePushableCooldown;
                     hit.collider.transform.Translate(direction * 0.16f, 0, 0);
-                    transform.position = targetPosition;
+                    rb.MovePosition(targetPosition);
+                }
+            }
+            else if ((hit.collider.gameObject.layer == LayerMask.NameToLayer("Finished")))
+            {
+                LevelEnd levelEnd = hit.collider.GetComponent<LevelEnd>();
+                if (levelEnd != null)
+                {
+                    levelEnd.NextLevel();
+                }
+            }
+            else if ((hit.collider.gameObject.layer == LayerMask.NameToLayer("Destructable")))
+            {
+                Destructable destructable = hit.collider.GetComponent<Destructable>();
+                if (destructable != null)
+                {
+                    destructable.DestroyObject();
+                    rb.MovePosition(targetPosition);
+                }
+            }
+            {
+                CheckPoints point = hit.collider.GetComponent<CheckPoints>();
+                if (point != null)
+                {
+                    point.SaveLevel();
+                    rb.MovePosition(targetPosition);
                 }
             }
         }

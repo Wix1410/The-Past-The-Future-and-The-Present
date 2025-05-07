@@ -4,22 +4,20 @@ public class CheckPoints : MonoBehaviour
 {
     public Sprite[] sprite;
     public SpriteRenderer spriteRenderer;
+    public Collider2D collider;
 
     private bool isUsed = false;
 
-    private void Update()
+    public void SaveLevel()
     {
         if (isUsed)
         {
             return;
         }
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.up, 0.01f);
-        if (hit.collider != null && hit.collider.CompareTag("Player"))
-        {
-            Saveble.SaveAll();
-            isUsed = true;
-            Debug.Log("Checkpoint reached");
-        }
+        Saveble.SaveAll();
+        isUsed = true;
+        collider.enabled = false;
+        Debug.Log("Checkpoint reached");
     }
 }
 
