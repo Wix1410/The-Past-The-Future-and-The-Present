@@ -14,8 +14,8 @@ public class CameraFollow : MonoBehaviour
         {
             camera.transform.SetParent(player.transform);
             camera.GetComponent<BoxCollider2D>().enabled = false;
-            player.GetComponentInParent<PlayerMovement>().enabled = true;
-            player.GetComponentInParent<INepednentPlayerStartMovement>().enabled = false;
+            player.GetComponentInParent<Player>().enabled = true;
+            player.GetComponentInParent<IntroAnimation>().enabled = false;
         }
     }
 }

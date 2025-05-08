@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PlayerMovement : MonoBehaviour
+public class Player : MonoBehaviour
 {
     [Header("Bindings")]
     public GameObject pauseMenu;
@@ -11,9 +11,6 @@ public class PlayerMovement : MonoBehaviour
     [Header("Movement")]
     public float moveCooldown = 0.5f;
     public float movePushableCooldown = 0.5f;
-
-    [Header("Settings")]
-    public LayerMask wallLayer;
 
     private float moveTimer = 0f;
     private void Update()
@@ -27,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
             Time.timeScale = 0;
             pauseMenu.gameObject.SetActive(true);
         }
-        if (Input.GetKeyDown(KeyCode.F10))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             Saveble.LoadAll();
         }
@@ -89,6 +86,7 @@ public class PlayerMovement : MonoBehaviour
                     rb.MovePosition(targetPosition);
                 }
             }
+            else if ((hit.collider.gameObject.layer == LayerMask.NameToLayer("CheckPoint")))
             {
                 CheckPoints point = hit.collider.GetComponent<CheckPoints>();
                 if (point != null)

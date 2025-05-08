@@ -1,18 +1,15 @@
 using UnityEngine;
 
-public class INepednentPlayerStartMovement : MonoBehaviour
+public class IntroAnimation : MonoBehaviour
 {
     [Header("Movement")]
     public float moveCooldown = 0.5f;
 
-    public GameObject player;
+    [Header("Bindings")]
+    public Player player;
 
     private float moveTimer = 0f;
 
-    void Start()
-    {
-        player.GetComponentInParent<PlayerMovement>().enabled = false;
-    }
     void Update()
     {
         if (moveTimer > 0)

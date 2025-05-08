@@ -36,6 +36,7 @@ public class PauseMenu : MonoBehaviour
     private void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1;
     }
 
     private void Settings()
@@ -51,18 +52,5 @@ public class PauseMenu : MonoBehaviour
     private void QuitGame()
     {
         SceneManager.LoadScene("MainMenu");
-    }
-    private void OnApplicationPause(bool pause)
-    {
-        if (pause)
-        {
-            gameObject.SetActive(true);
-            player.GetComponent<PlayerMovement>().enabled = false;
-        }
-        else
-        {
-            gameObject.SetActive(false);
-            player.GetComponent<PlayerMovement>().enabled = true;
-        }
     }
 }

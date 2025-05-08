@@ -833,11 +833,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3373961352783049856, guid: 3a407a858b10ea44a9c7d2105e40088e, type: 3}
   m_PrefabInstance: {fileID: 294910941}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &307951973 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 474357781777643384, guid: 71fa9d92e19c44342be1a2c4044207f9, type: 3}
-  m_PrefabInstance: {fileID: 4433080496847181364}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &312746518
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5422,7 +5417,7 @@ PrefabInstance:
     - target: {fileID: 8487699537899533839, guid: ee43b49839c21714dafa630b0d8b8f3e, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 307951973}
+      objectReference: {fileID: 0}
     - target: {fileID: 8487699537899533839, guid: ee43b49839c21714dafa630b0d8b8f3e, type: 3}
       propertyPath: eventSystem
       value: 
@@ -5451,10 +5446,6 @@ PrefabInstance:
     - target: {fileID: 2226151715003246965, guid: 71fa9d92e19c44342be1a2c4044207f9, type: 3}
       propertyPath: m_Layer
       value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 3581469959358097042, guid: 71fa9d92e19c44342be1a2c4044207f9, type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3581469959358097042, guid: 71fa9d92e19c44342be1a2c4044207f9, type: 3}
       propertyPath: pauseMenu

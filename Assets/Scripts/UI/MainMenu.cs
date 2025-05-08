@@ -23,6 +23,7 @@ public class MainMenu : MonoBehaviour
     private void StartNewGame()
     {
         SceneManager.LoadScene("Prologue");
+        Time.timeScale = 1;
     }
     public void ContinueGame()
     {
