@@ -1,4 +1,5 @@
-﻿using UnityEditor;
+﻿using System.Collections;
+using System.Drawing;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -36,12 +37,12 @@ public class Player : MonoBehaviour
         Vector3 targetPosition = transform.position;
         if (Input.GetAxisRaw("Horizontal") != 0 && Input.GetAxisRaw("Vertical") == 0)
         { 
-            targetPosition.x += Input.GetAxisRaw("Horizontal") * 0.16f;
+            targetPosition.x += Input.GetAxisRaw("Horizontal");
             moveTimer = moveCooldown;
         }
         if (Input.GetAxisRaw("Vertical") != 0 && Input.GetAxisRaw("Horizontal") == 0)
         {
-            targetPosition.y += Input.GetAxisRaw("Vertical") * 0.16f;
+            targetPosition.y += Input.GetAxisRaw("Vertical");
             moveTimer = moveCooldown;
         }
         RaycastHit2D hit = Physics2D.Raycast(targetPosition, Vector2.up, 0.01f);
@@ -61,11 +62,11 @@ public class Player : MonoBehaviour
             if ((hit.collider.gameObject.layer == LayerMask.NameToLayer("Movable")))
             {
                 Vector3 boxPosition = hit.collider.transform.position;
-                Collider2D box = Physics2D.OverlapBox(boxPosition + Vector3.right * 0.16f * direction, new Vector2(0.1f, 0.1f), 0f);
+                Collider2D box = Physics2D.OverlapBox(boxPosition + Vector3.right * direction, new Vector2(0.1f, 0.1f), 0f);
                 if (box == null)
                 {
                     moveTimer = movePushableCooldown;
-                    hit.collider.transform.Translate(direction * 0.16f, 0, 0);
+                    hit.collider.transform.Translate(direction, 0, 0);
                     rb.MovePosition(targetPosition);
                 }
             }
@@ -91,8 +92,9 @@ public class Player : MonoBehaviour
                 CheckPoints point = hit.collider.GetComponent<CheckPoints>();
                 if (point != null)
                 {
-                    point.SaveLevel();
                     rb.MovePosition(targetPosition);
+                    transform.position = point.transform.position;
+                    point.SaveLevel();
                 }
             }
         }

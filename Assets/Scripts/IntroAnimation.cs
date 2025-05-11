@@ -7,8 +7,16 @@ public class IntroAnimation : MonoBehaviour
 
     [Header("Bindings")]
     public Player player;
+    public CheckPoints startCheckpoint;
+    public Transform camera;
+    public Transform endPosition;
 
     private float moveTimer = 0f;
+
+    private void Start()
+    {
+        player.enabled = false;
+    }
 
     void Update()
     {
@@ -18,6 +26,18 @@ public class IntroAnimation : MonoBehaviour
             return;
         }
         moveTimer = moveCooldown;
-        transform.Translate(1 * 0.16f, 0, 0);
+        transform.Translate(1, 0, 0);
+        float distance = Vector3.Distance(transform.position, endPosition.position);
+        if(distance <= 0.5f)
+        {
+            this.enabled = false;
+        }
+    }
+
+    private void OnDisable()
+    {
+        startCheckpoint.SaveLevel();
+        camera.SetParent(player.transform);
+        player.enabled = true;
     }
 }

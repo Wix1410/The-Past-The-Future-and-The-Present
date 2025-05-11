@@ -6,9 +6,6 @@ using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
-    [Header("Bindings")]
-    public EventSystem eventSystem;
-    public GameObject player;
 
     [Header("UI")]
     public Button resumeButton;

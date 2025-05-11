@@ -4,10 +4,7 @@ using UnityEngine;
 public class Falling : MonoBehaviour
 {
     [Header("Movement")]
-    public float moveCooldown = 0.5f;
-
-    [Header("Settings")]
-    public LayerMask wallLayer;
+    public float moveCooldown = 0.1f;
 
     private float moveTimer = 0f;
 
@@ -19,11 +16,11 @@ public class Falling : MonoBehaviour
             return;
         }
         Vector3 position = transform.position;
-        Collider2D box = Physics2D.OverlapBox(position + Vector3.down * 0.16f, new Vector2(0.1f, 0.1f), 0f);
+        Collider2D box = Physics2D.OverlapBox(position + Vector3.down * 1f, new Vector2(0.1f, 0.1f), 0f);
         if (box == null)
         {
             moveTimer = moveCooldown;
-            transform.Translate(0, -1 * 0.16f, 0);
+            transform.Translate(0, -1, 0);
         }
     }
 }
