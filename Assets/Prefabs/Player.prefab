@@ -99,6 +99,9 @@ MonoBehaviour:
   rb: {fileID: 6064912062572906662}
   moveCooldown: 0.1
   movePushableCooldown: 0.1
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!114 &5646567985153703937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,6 +119,7 @@ MonoBehaviour:
   startCheckpoint: {fileID: 0}
   camera: {fileID: 0}
   endPosition: {fileID: 0}
+  startDoors: {fileID: 0}
 --- !u!114 &9042387055320012408
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -9,6 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3099246026492937438}
+  - component: {fileID: 5901235498035819720}
+  - component: {fileID: 281290951153893213}
+  - component: {fileID: 7156470355864615334}
   m_Layer: 7
   m_Name: LabChest
   m_TagString: Untagged
@@ -32,6 +35,81 @@ Transform:
   - {fileID: 8608846024493082653}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &5901235498035819720
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3795449497922067105}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &281290951153893213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3795449497922067105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ce484340399fab4387b4fa765b5375b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: 2
+  spriteRenderer: {fileID: 2452360680588891016}
+  openSprite: {fileID: 1972231426, guid: d1d96298de4ce11478fd15cb14da15f7, type: 3}
+  closedSprite: {fileID: 1616454887, guid: d1d96298de4ce11478fd15cb14da15f7, type: 3}
+--- !u!114 &7156470355864615334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3795449497922067105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5406f713f25a7ba418f73d4aa7e9a182, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 1000
 --- !u!1 &7347352805203117375
 GameObject:
   m_ObjectHideFlags: 0

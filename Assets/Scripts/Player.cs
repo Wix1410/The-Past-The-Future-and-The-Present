@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Drawing;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,6 +11,9 @@ public class Player : MonoBehaviour
     [Header("Movement")]
     public float moveCooldown = 0.5f;
     public float movePushableCooldown = 0.5f;
+
+    [Header("Eq")]
+    public List<Item> items = new List<Item>();
 
     private float moveTimer = 0f;
     private void Update()
@@ -46,15 +48,14 @@ public class Player : MonoBehaviour
             moveTimer = moveCooldown;
         }
         RaycastHit2D hit = Physics2D.Raycast(targetPosition, Vector2.up, 0.01f);
-        if (hit.collider == null )
+        if (hit.collider == null)
         {
             if(targetPosition != transform.position)
             {
-                //transform.position = targetPosition;
                 rb.MovePosition(targetPosition);
             }
         }
-        else
+        else if (targetPosition != transform.position && hit.collider.gameObject.layer != LayerMask.NameToLayer("Wall"))
         {
             //Dotkniecie
             float direction = Input.GetAxisRaw("Horizontal");
@@ -96,6 +97,34 @@ public class Player : MonoBehaviour
                     transform.position = point.transform.position;
                     point.SaveLevel();
                 }
+            }
+            else if ((hit.collider.gameObject.layer == LayerMask.NameToLayer("DoorButton")))
+            {
+                DoorsButton doorsButton = hit.collider.GetComponent<DoorsButton>();
+                if (doorsButton != null)
+                {
+                    rb.MovePosition(targetPosition);
+                    transform.position = doorsButton.transform.position;
+                    doorsButton.TurnOn(this);
+                }
+            }
+            else if ((hit.collider.gameObject.layer == LayerMask.NameToLayer("Doors")))
+            {
+
+            }
+            else if ((hit.collider.gameObject.layer == LayerMask.NameToLayer("Chest")))
+            {
+                Chest chest = hit.collider.GetComponent<Chest>();
+                if (chest != null)
+                {
+                    rb.MovePosition(targetPosition);
+                    chest.OpenChest(this);
+                }
+            }
+            else
+            {
+                rb.MovePosition(targetPosition);
+                Debug.LogError($"[Player] Trigger Not Supported: {hit.collider.gameObject}", hit.collider.gameObject);
             }
         }
     }

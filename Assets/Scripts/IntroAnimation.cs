@@ -10,6 +10,7 @@ public class IntroAnimation : MonoBehaviour
     public CheckPoints startCheckpoint;
     public Transform camera;
     public Transform endPosition;
+    public Doors startDoors;
 
     private float moveTimer = 0f;
 
@@ -39,5 +40,6 @@ public class IntroAnimation : MonoBehaviour
         startCheckpoint.SaveLevel();
         camera.SetParent(player.transform);
         player.enabled = true;
+        startDoors.Close();
     }
 }
