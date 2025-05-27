@@ -16,6 +16,12 @@ public class Player : MonoBehaviour
     public List<Item> items = new List<Item>();
 
     private float moveTimer = 0f;
+
+    private Computer currentlyInteractedComputer;
+    private void Start()
+    {
+        PlayerPrefs.DeleteKey("player_name");
+    }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.R))
@@ -30,6 +36,11 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Saveble.LoadAll();
+        }
+        if (Input.GetKeyDown(KeyCode.E) && currentlyInteractedComputer != null)
+        {
+            currentlyInteractedComputer.OpenComputer();
+            this.enabled = false;
         }
         if (moveTimer > 0)
         {
@@ -46,6 +57,14 @@ public class Player : MonoBehaviour
         {
             targetPosition.y += Input.GetAxisRaw("Vertical");
             moveTimer = moveCooldown;
+        }
+        if(targetPosition != transform.position)
+        {
+            if (currentlyInteractedComputer != null)
+            {
+                currentlyInteractedComputer.pressEPopUp.SetActive(false);
+            }
+            currentlyInteractedComputer = null;
         }
         RaycastHit2D hit = Physics2D.Raycast(targetPosition, Vector2.up, 0.01f);
         if (hit.collider == null)
@@ -119,6 +138,15 @@ public class Player : MonoBehaviour
                 {
                     rb.MovePosition(targetPosition);
                     chest.OpenChest(this);
+                }
+            }
+            else if ((hit.collider.gameObject.layer == LayerMask.NameToLayer("Computer")))
+            {
+                Computer computer = hit.collider.GetComponent<Computer>();
+                if (computer != null)
+                {
+                    computer.pressEPopUp.SetActive(true);
+                    currentlyInteractedComputer = computer;
                 }
             }
             else

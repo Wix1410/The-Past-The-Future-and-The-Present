@@ -7,6 +7,7 @@ public class DoorsButton : MonoBehaviour
     public List<Doors> disable = new List<Doors>();
     public List<Doors> switchable = new List<Doors>();
     public List<Doors> switchableHold = new List<Doors>();
+    public List<Doors> loginOpen = new List<Doors>();
     public List<DoorItemRequirement> keyOpen = new List<DoorItemRequirement>();
 
     public void TurnOn(Player player)
@@ -33,6 +34,13 @@ public class DoorsButton : MonoBehaviour
             {
                 keyOpen[i].door.Open();
                 player.items.Remove(keyOpen[i].key);
+            }
+        }
+        for (int i = 0; i < loginOpen.Count; i++)
+        {
+            if(PlayerPrefs.HasKey("player_name"))
+            {
+                loginOpen[i].Open();
             }
         }
     }

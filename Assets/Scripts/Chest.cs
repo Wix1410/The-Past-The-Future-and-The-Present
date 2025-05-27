@@ -36,7 +36,6 @@ public class Chest : MonoBehaviour
         // Logic to open the chest, e.g., play an animation, give items, etc.
         player.items.Add(item);
         item = Item.None; // Remove the item from the chest after opening
-        Debug.Log("Chest opened!");
         RefreshSprite(); // Update the sprite to show the chest is empty
     }
     private void OnDrawGizmosSelected()
