@@ -6,7 +6,9 @@ public class Doors : MonoBehaviour
     public BoxCollider2D doorCollider;
     public SpriteRenderer open;
     public SpriteRenderer close;
+    public Saveble saveble;
 
+    public int levelNumber;
     public bool isOpen = false;
 
     public void Open()
@@ -15,6 +17,7 @@ public class Doors : MonoBehaviour
         isOpen = true;
         open.enabled = true;
         close.enabled = false;
+        PlayerPrefs.SetInt($"door_{levelNumber}_{saveble.id}", 1); 
     }
 
     public void Close()
@@ -23,6 +26,7 @@ public class Doors : MonoBehaviour
         isOpen = false;
         open.enabled = false;
         close.enabled = true;
+        PlayerPrefs.SetInt($"door_{levelNumber}_{saveble.id}", 0);
     }
 
     private void OnDrawGizmosSelected()

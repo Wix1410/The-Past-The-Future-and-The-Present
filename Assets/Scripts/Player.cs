@@ -18,6 +18,7 @@ public class Player : MonoBehaviour
     private float moveTimer = 0f;
 
     private Computer currentlyInteractedComputer;
+
     private void Start()
     {
         PlayerPrefs.DeleteKey("player_name");

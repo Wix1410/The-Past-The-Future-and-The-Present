@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: 1574364008161414596}
   - component: {fileID: 117048056085777697}
   - component: {fileID: 7567020739067692604}
+  - component: {fileID: 1783937917672997871}
   m_Layer: 15
   m_Name: LabDoors
   m_TagString: Untagged
@@ -183,7 +184,23 @@ MonoBehaviour:
   doorCollider: {fileID: 117048056085777697}
   open: {fileID: 3390953985197751328}
   close: {fileID: 7450196377635208042}
+  saveble: {fileID: 1783937917672997871}
+  door_id: 0
   isOpen: 0
+--- !u!114 &1783937917672997871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6422107657685152696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5406f713f25a7ba418f73d4aa7e9a182, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doors: {fileID: 0}
+  id: 0
 --- !u!1 &8926607684892880083
 GameObject:
   m_ObjectHideFlags: 0

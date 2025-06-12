@@ -93,6 +93,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pressEPopUp: {fileID: 0}
+  computerUI: {fileID: 0}
   loginComputer:
   - {fileID: 6917495833263477584}
 --- !u!1 &5105574632601701904

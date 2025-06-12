@@ -5,6 +5,8 @@ using UnityEngine;
 public class Saveble : MonoBehaviour
 {
     public static List<Saveble> savebles = new List<Saveble>();
+
+    public Doors doors;
    
     public int id;
 
@@ -37,6 +39,22 @@ public class Saveble : MonoBehaviour
         {
             Vector3 position = new Vector3(PlayerPrefs.GetFloat(key + "position_x"), PlayerPrefs.GetFloat(key + "position_y"));
             transform.position = position;
+        }
+
+        if (doors == null)
+        {
+            return;
+        }
+        if (PlayerPrefs.HasKey($"door_{id}"))
+        {
+            if (PlayerPrefs.GetInt($"door_{id}") == 0) 
+            {
+                doors.Open();
+            }
+            else if (PlayerPrefs.GetInt($"door_{id}") == 1) 
+            {
+                doors.Close();
+            }
         }
     }
 

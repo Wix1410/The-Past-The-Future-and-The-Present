@@ -1,0 +1,63 @@
+﻿
+using System;
+using System.Collections;
+using UnityEngine;
+using UnityEngine.UIElements;
+
+[DisallowMultipleComponent] 
+public class Crusher : Falling
+{ 
+	[Header("Settings")]
+	public float crushTimer = 5f;
+
+	private int fallCount = 0;
+	private Coroutine crushCoroutine = null;
+
+	public override void OnFallOnObject(Collider2D box)
+	{
+		Debug.Log(fallCount);
+		if (box.gameObject.CompareTag("Player"))
+		{
+			if (crushCoroutine == null)
+			{
+                crushCoroutine = StartCoroutine(CrushDelay(box.gameObject));
+				return;
+			}
+			else if(fallCount > 0)
+			{
+				InstaKill(box.gameObject);
+			}
+		}
+		if (isFalling)
+		{
+			fallCount++;
+		}
+	}
+
+	private void InstaKill(GameObject gameObject)
+	{
+		StopAllCoroutines();
+		fallCount = 0;
+        Saveble.LoadAll();
+		//Debug.Log("Player crushed by falling object after delay!");
+	}
+
+	IEnumerator CrushDelay(GameObject player)
+	{
+		if (fallCount < 1)
+		{
+			yield return new WaitForSeconds(crushTimer);
+		}
+		Collider2D box = Physics2D.OverlapBox(transform.position + Vector3.down * 1f, new Vector2(0.1f, 0.1f), 0f);
+		if (box == null)
+		{
+			yield break;
+		}
+		if(box.gameObject != player)
+		{
+			yield break;
+		}
+		//moment the player is crushed
+		InstaKill(player);
+	}
+}

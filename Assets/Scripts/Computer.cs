@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Computer : MonoBehaviour
 {
@@ -8,18 +9,33 @@ public class Computer : MonoBehaviour
     public GameObject computerUI;
 
     public List<Computer> loginComputer = new List<Computer>();
+    public List<Computer> startTimeGateComputer = new List<Computer>();
 
     private void Start()
     {
         pressEPopUp.SetActive(false);
-        computerUI.SetActive(false);    
+        if(computerUI != null)
+        {
+            computerUI.SetActive(false);    
+        }
     }
     public void OpenComputer()
     {
+        if(computerUI == null)
+        {
+            Debug.LogWarning("Computer UI is not assigned!");
+            return;
+        }
         for (int i = 0; i < loginComputer.Count; i++)
         {
             computerUI.SetActive(true);
             Time.timeScale = 0;
+        }
+        for (int i = 0; i < startTimeGateComputer.Count; i++)
+        {
+            //computerUI.SetActive(true);
+            //Time.timeScale = 0;
+            SceneManager.LoadScene("Level1");
         }
     }
 }

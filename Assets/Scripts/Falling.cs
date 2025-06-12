@@ -1,12 +1,14 @@
 
 using UnityEngine;
-
+[DisallowMultipleComponent]
 public class Falling : MonoBehaviour
 {
+
     [Header("Movement")]
     public float moveCooldown = 0.1f;
+    public bool isFalling = false;
 
-    private float moveTimer = 0f;
+    protected float moveTimer = 0f;
 
     private void Update()
     {
@@ -21,6 +23,17 @@ public class Falling : MonoBehaviour
         {
             moveTimer = moveCooldown;
             transform.Translate(0, -1, 0);
+            isFalling = true;
         }
+        else
+        {
+            OnFallOnObject(box);
+            isFalling = false;
+        }
+    }
+
+    public virtual void OnFallOnObject(Collider2D box)
+    {
+
     }
 }

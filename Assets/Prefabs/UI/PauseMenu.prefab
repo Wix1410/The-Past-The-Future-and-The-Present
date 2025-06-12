@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 7664807735657788756, guid: ecded446b2a5ce047bac039c27310f1d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -121,7 +121,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventSystem: {fileID: 0}
-  player: {fileID: 0}
   resumeButton: {fileID: 4691759529197162292}
   restartButton: {fileID: 3210814268064383044}
   settingsButton: {fileID: 6940257587412258280}
