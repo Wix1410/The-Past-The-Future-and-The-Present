@@ -16,17 +16,19 @@ public class Crusher : Falling
 	public override void OnFallOnObject(Collider2D box)
 	{
 		Debug.Log(fallCount);
-		if (box.gameObject.CompareTag("Player"))
+		if (box != null && box.gameObject.CompareTag("Player"))
 		{
-			if (crushCoroutine == null)
-			{
-                crushCoroutine = StartCoroutine(CrushDelay(box.gameObject));
-				return;
-			}
-			else if(fallCount > 0)
+
+			if (fallCount > 0)
 			{
 				InstaKill(box.gameObject);
 			}
+			else if (crushCoroutine == null)
+			{
+				crushCoroutine = StartCoroutine(CrushDelay(box.gameObject));
+				return;
+			}
+
 		}
 		if (isFalling)
 		{
@@ -38,8 +40,7 @@ public class Crusher : Falling
 	{
 		StopAllCoroutines();
 		fallCount = 0;
-        Saveble.LoadAll();
-		//Debug.Log("Player crushed by falling object after delay!");
+		Saveble.LoadAll();
 	}
 
 	IEnumerator CrushDelay(GameObject player)

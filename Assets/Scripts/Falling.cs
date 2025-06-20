@@ -17,11 +17,13 @@ public class Falling : MonoBehaviour
             moveTimer -= Time.deltaTime;
             return;
         }
+        moveTimer = moveCooldown;
         Vector3 position = transform.position;
         Collider2D box = Physics2D.OverlapBox(position + Vector3.down * 1f, new Vector2(0.1f, 0.1f), 0f);
         if (box == null)
         {
-            moveTimer = moveCooldown;
+
+            OnFallOnObject(null);
             transform.Translate(0, -1, 0);
             isFalling = true;
         }
