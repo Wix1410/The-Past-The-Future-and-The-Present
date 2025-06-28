@@ -32,10 +32,8 @@ public class Computer : MonoBehaviour
             Time.timeScale = 0;
         }
         for (int i = 0; i < startTimeGateComputer.Count; i++)
-        {
-            //computerUI.SetActive(true);
-            //Time.timeScale = 0;
-            SceneManager.LoadScene("Level1");
+        {   
+            SceneManager.LoadScene("TimePeriodChooseMenu");
         }
     }
 }

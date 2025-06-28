@@ -1,13 +1,13 @@
-﻿
-using System;
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 [DisallowMultipleComponent] 
 public class Crusher : Falling
-{ 
-	[Header("Settings")]
+{
+	[Header("References")]
+	public Player player;
+
+    [Header("Settings")]
 	public float crushTimer = 5f;
 
 	private int fallCount = 0;
@@ -15,20 +15,20 @@ public class Crusher : Falling
 
 	public override void OnFallOnObject(Collider2D box)
 	{
-		Debug.Log(fallCount);
 		if (box != null && box.gameObject.CompareTag("Player"))
 		{
 
 			if (fallCount > 0)
 			{
 				InstaKill(box.gameObject);
+				player.currentHp -= 2;
 			}
 			else if (crushCoroutine == null)
 			{
 				crushCoroutine = StartCoroutine(CrushDelay(box.gameObject));
-				return;
+                player.currentHp -= 3;
+                return;
 			}
-
 		}
 		if (isFalling)
 		{
@@ -49,7 +49,7 @@ public class Crusher : Falling
 		{
 			yield return new WaitForSeconds(crushTimer);
 		}
-		Collider2D box = Physics2D.OverlapBox(transform.position + Vector3.down * 1f, new Vector2(0.1f, 0.1f), 0f);
+        Collider2D box = Physics2D.OverlapBox(transform.position + Vector3.down * 1f, new Vector2(0.1f, 0.1f), 0f);
 		if (box == null)
 		{
 			yield break;
@@ -60,5 +60,5 @@ public class Crusher : Falling
 		}
 		//moment the player is crushed
 		InstaKill(player);
-	}
+    }
 }

@@ -11,12 +11,14 @@ public class IntroAnimation : MonoBehaviour
     public Transform camera;
     public Transform endPosition;
     public Doors startDoors;
+    public GameObject playerUI;
 
     private float moveTimer = 0f;
 
     private void Start()
     {
         player.enabled = false;
+        playerUI.SetActive(false);
     }
 
     void Update()
@@ -41,5 +43,6 @@ public class IntroAnimation : MonoBehaviour
         camera.SetParent(player.transform);
         player.enabled = true;
         startDoors.Close();
+        playerUI.SetActive(true);
     }
 }

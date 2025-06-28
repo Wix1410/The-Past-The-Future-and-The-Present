@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Prologue.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Scenes/Level1.unity
+    path: Assets/Scenes/Egypt levels/EgyptLevel1.unity
     guid: 3defda35509deb34b892b1079144eef0
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

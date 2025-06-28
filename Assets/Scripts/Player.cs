@@ -12,6 +12,10 @@ public class Player : MonoBehaviour
     public float moveCooldown = 0.5f;
     public float movePushableCooldown = 0.5f;
 
+    [Header("Hp")]
+    public int MaxHp = 4;
+    public int currentHp;
+
     [Header("Eq")]
     public List<Item> items = new List<Item>();
 
@@ -21,6 +25,7 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
+        currentHp = MaxHp;
         PlayerPrefs.DeleteKey("player_name");
     }
     private void Update()
@@ -148,6 +153,14 @@ public class Player : MonoBehaviour
                 {
                     computer.pressEPopUp.SetActive(true);
                     currentlyInteractedComputer = computer;
+                }
+            }
+            else if ((hit.collider.gameObject.layer == LayerMask.NameToLayer("Collectable")))
+            {
+                Coin coin = hit.collider.GetComponent<Coin>();
+                if (coin != null)
+                {
+                    coin.CollectCoin();
                 }
             }
             else

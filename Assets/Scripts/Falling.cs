@@ -1,6 +1,6 @@
-
 using UnityEngine;
 [DisallowMultipleComponent]
+
 public class Falling : MonoBehaviour
 {
 
