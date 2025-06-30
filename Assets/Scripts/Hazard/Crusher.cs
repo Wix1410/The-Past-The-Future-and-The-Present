@@ -5,7 +5,7 @@ using UnityEngine;
 public class Crusher : Falling
 {
 	[Header("References")]
-	public Player player;
+	public Player playerHp;
 
     [Header("Settings")]
 	public float crushTimer = 5f;
@@ -21,12 +21,11 @@ public class Crusher : Falling
 			if (fallCount > 0)
 			{
 				InstaKill(box.gameObject);
-				player.currentHp -= 2;
+                playerHp.currentHp -= 2;
 			}
 			else if (crushCoroutine == null)
 			{
 				crushCoroutine = StartCoroutine(CrushDelay(box.gameObject));
-                player.currentHp -= 3;
                 return;
 			}
 		}
@@ -59,6 +58,7 @@ public class Crusher : Falling
 			yield break;
 		}
 		//moment the player is crushed
+		playerHp.currentHp -= 3;
 		InstaKill(player);
     }
 }
