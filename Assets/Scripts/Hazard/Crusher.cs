@@ -58,7 +58,8 @@ public class Crusher : Falling
 			yield break;
 		}
 		//moment the player is crushed
-		playerHp.currentHp -= 3;
 		InstaKill(player);
+		playerHp.currentHp -= 3;
+		Debug.Log($"Player HP: {playerHp.currentHp}");
     }
 }

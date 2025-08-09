@@ -99,9 +99,9 @@ MonoBehaviour:
   rb: {fileID: 6064912062572906662}
   moveCooldown: 0.1
   movePushableCooldown: 0.1
-  wallLayer:
-    serializedVersion: 2
-    m_Bits: 8
+  MaxHp: 4
+  currentHp: 0
+  items: 
 --- !u!114 &5646567985153703937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,6 +120,7 @@ MonoBehaviour:
   camera: {fileID: 0}
   endPosition: {fileID: 0}
   startDoors: {fileID: 0}
+  playerUI: {fileID: 0}
 --- !u!114 &9042387055320012408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,6 +133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5406f713f25a7ba418f73d4aa7e9a182, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doors: {fileID: 0}
   id: 100
 --- !u!50 &6064912062572906662
 Rigidbody2D:

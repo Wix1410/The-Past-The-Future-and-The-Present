@@ -93,7 +93,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ce484340399fab4387b4fa765b5375b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: 2
+  item: 1
   spriteRenderer: {fileID: 2452360680588891016}
   openSprite: {fileID: 1972231426, guid: d1d96298de4ce11478fd15cb14da15f7, type: 3}
   closedSprite: {fileID: 1616454887, guid: d1d96298de4ce11478fd15cb14da15f7, type: 3}
@@ -109,6 +109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5406f713f25a7ba418f73d4aa7e9a182, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doors: {fileID: 0}
   id: 1000
 --- !u!1 &7347352805203117375
 GameObject:

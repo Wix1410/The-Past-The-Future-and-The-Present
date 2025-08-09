@@ -15,9 +15,9 @@ public class MainMenu : MonoBehaviour
     private void Start()
     {
         newGameButton.onClick.AddListener(StartNewGame);
-        continueButton.onClick.AddListener(ContinueGame);
+        continueButton.enabled = false;
         settingsButton.onClick.AddListener(Settings);
-        creditsButton.onClick.AddListener(Credits);
+        creditsButton.enabled = false;
         quitButton.onClick.AddListener(QuitGame);
     }
     private void StartNewGame()

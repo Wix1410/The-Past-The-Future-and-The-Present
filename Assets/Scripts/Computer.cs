@@ -7,6 +7,7 @@ public class Computer : MonoBehaviour
     [Header("Bindings")]
     public GameObject pressEPopUp;
     public GameObject computerUI;
+    public Player player;
 
     public List<Computer> loginComputer = new List<Computer>();
     public List<Computer> startTimeGateComputer = new List<Computer>();

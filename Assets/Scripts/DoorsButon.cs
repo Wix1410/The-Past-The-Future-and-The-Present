@@ -38,7 +38,7 @@ public class DoorsButton : MonoBehaviour
         }
         for (int i = 0; i < loginOpen.Count; i++)
         {
-            if(PlayerPrefs.HasKey("player_name"))
+            if(PlayerPrefs.HasKey("player_Password"))
             {
                 loginOpen[i].Open();
             }

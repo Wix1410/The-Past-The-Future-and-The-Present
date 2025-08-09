@@ -181,7 +181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doors: {fileID: 0}
-  id: 0
+  id: 6
 --- !u!114 &6796023777958104196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -196,5 +196,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveCooldown: 0.1
   isFalling: 0
-  player: {fileID: 0}
-  saveble: {fileID: 362144846020103753}
+  playerHp: {fileID: 0}
+  crushTimer: 1

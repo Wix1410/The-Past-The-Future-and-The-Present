@@ -4,11 +4,16 @@ using UnityEngine.UI;
 public class HpManager : MonoBehaviour
 {
     [Header("Bindings")]    
-    public Slider helthSlider;
+    public Slider healthSlider;
     public Player player;
+
+    private void Start()
+    {
+        healthSlider.maxValue = player.MaxHp;
+    }
 
     void Update()
     {
-        helthSlider.value = player.currentHp;
+        healthSlider.value = player.currentHp;
     }
 }

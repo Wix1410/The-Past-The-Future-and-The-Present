@@ -26,7 +26,7 @@ public class Player : MonoBehaviour
     private void Start()
     {
         currentHp = MaxHp;
-        PlayerPrefs.DeleteKey("player_name");
+        PlayerPrefs.DeleteKey("player_Password");
     }
     private void Update()
     {

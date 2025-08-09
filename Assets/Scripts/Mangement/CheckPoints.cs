@@ -1,9 +1,10 @@
+using UnityEditor;
 using UnityEngine;
 
 public class CheckPoints : MonoBehaviour
 {
-    public Sprite[] sprite;
-    public SpriteRenderer spriteRenderer;
+    public AudioSource audioSource;
+    public AudioClip audioClip;
     public Collider2D collider;
 
     private bool isUsed = false;
@@ -17,7 +18,7 @@ public class CheckPoints : MonoBehaviour
         Saveble.SaveAll();
         isUsed = true;
         collider.enabled = false;
-        Debug.Log("Checkpoint reached");
+        audioSource.PlayOneShot(audioClip);
     }
 }
 
