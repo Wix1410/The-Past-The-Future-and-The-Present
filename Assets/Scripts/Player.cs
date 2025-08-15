@@ -84,7 +84,7 @@ public class Player : MonoBehaviour
             }
             else if ((hit.collider.gameObject.layer == LayerMask.NameToLayer("Collectable")))
             {
-                HandleCollisionCoins(hit);
+                HandleCollisionCoins(targetPosition, hit);
             }
             else
             {
@@ -213,11 +213,13 @@ public class Player : MonoBehaviour
         }
     }
 
-    private static void HandleCollisionCoins(RaycastHit2D hit)
+    private void HandleCollisionCoins(Vector3 targetPosition, RaycastHit2D hit)
     {
         Coin coin = hit.collider.GetComponent<Coin>();
         if (coin != null)
         {
+            rb.MovePosition(targetPosition);
+            transform.position = coin.transform.position;
             coin.CollectCoin();
         }
     }
