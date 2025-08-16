@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2497494629380980310}
   - component: {fileID: 5947526878099900581}
   - component: {fileID: 5253386099004588502}
-  - component: {fileID: 6291550915134476502}
+  - component: {fileID: 4825516573121653485}
   m_Layer: 16
   m_Name: Collectable
   m_TagString: Untagged
@@ -93,7 +93,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 697374a09a882bd44bf232e324847d76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &6291550915134476502
+--- !u!114 &4825516573121653485
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -102,11 +102,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 4616415785686389576}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8cbb58cce198ab64082436abc30eb7af, type: 3}
+  m_Script: {fileID: 11500000, guid: 728bcde451d5b2b4092bafbf13b1e580, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveCooldown: 0.1
   isFalling: 0
+  coin: {fileID: 5253386099004588502}
 --- !u!1 &5798476371298550305
 GameObject:
   m_ObjectHideFlags: 0
