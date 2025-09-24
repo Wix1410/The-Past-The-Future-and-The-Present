@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0786e391bde06694883dd28749644809
+guid: 5f6f8afbca05b3a4582f252602719961
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -102,7 +102,7 @@ ScriptedImporter:
     generateIndividualEvents: 1
     generateSpriteAtlas: 1
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638943353065958608
+  platformSettingsDirtyTick: 638943355084738350
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -127,9 +127,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: laptop_side
+  - name: chronos
     originalName: 
-    pivot: {x: 0.5416667, y: 0}
+    pivot: {x: 0.5217391, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -137,9 +137,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 24
-      height: 26
-    spriteID: 7993ef055eb1997429c397aa039ba170
+      width: 23
+      height: 32
+    spriteID: 531cc49116e623f489657cef0eee7085
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -153,25 +153,25 @@ ScriptedImporter:
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 1379487320
+      value0: 289971178
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: laptop_side
+    name: chronos
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: laptop_side
+    - name: chronos
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 3
+        x: 4
         y: 0
-        width: 24
-        height: 26
-      spriteId: 7993ef055eb1997429c397aa039ba170
+        width: 23
+        height: 32
+      spriteId: 531cc49116e623f489657cef0eee7085
     linkedCells: []
     tileCells: []
     tileSetIndex: 0

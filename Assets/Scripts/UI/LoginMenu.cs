@@ -16,6 +16,13 @@ public class LoginMenu : MonoBehaviour
     {
         loginButton.onClick.AddListener(Login); 
     }
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            BackToGame();
+        }
+    }
     public void Login()
     {
         if (passwordInput.text == "Time")
