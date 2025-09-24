@@ -171,6 +171,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 1783937917672997871, guid: 06eb624974e2d954689e6bb0aa64758e, type: 3}
+      propertyPath: id
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3390953985197751328, guid: 06eb624974e2d954689e6bb0aa64758e, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -754,6 +758,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 1783937917672997871, guid: 06eb624974e2d954689e6bb0aa64758e, type: 3}
+      propertyPath: id
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6422107657685152696, guid: 06eb624974e2d954689e6bb0aa64758e, type: 3}
       propertyPath: m_Name
       value: LabOldDoors (1)
@@ -1159,6 +1167,10 @@ PrefabInstance:
     - target: {fileID: 1574364008161414596, guid: 06eb624974e2d954689e6bb0aa64758e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783937917672997871, guid: 06eb624974e2d954689e6bb0aa64758e, type: 3}
+      propertyPath: id
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6422107657685152696, guid: 06eb624974e2d954689e6bb0aa64758e, type: 3}
       propertyPath: m_Name
@@ -29755,6 +29767,10 @@ PrefabInstance:
     - target: {fileID: 1574364008161414596, guid: 06eb624974e2d954689e6bb0aa64758e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783937917672997871, guid: 06eb624974e2d954689e6bb0aa64758e, type: 3}
+      propertyPath: id
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3390953985197751328, guid: 06eb624974e2d954689e6bb0aa64758e, type: 3}
       propertyPath: m_Enabled
