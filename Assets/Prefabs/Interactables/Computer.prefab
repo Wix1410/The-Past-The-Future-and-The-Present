@@ -94,8 +94,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pressEPopUp: {fileID: 0}
   computerUI: {fileID: 0}
+  player: {fileID: 0}
   loginComputer:
   - {fileID: 6917495833263477584}
+  startTimeGateComputer: []
 --- !u!1 &5105574632601701904
 GameObject:
   m_ObjectHideFlags: 0
@@ -172,7 +174,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -4945246272464210646, guid: d1d96298de4ce11478fd15cb14da15f7, type: 3}
+  m_Sprite: {fileID: 2731646758883431958, guid: cbe90b6076948f547b1a4083ca89e71f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
