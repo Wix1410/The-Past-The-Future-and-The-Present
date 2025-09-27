@@ -22,6 +22,10 @@ public class LoginMenu : MonoBehaviour
         {
             BackToGame();
         }
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            Login();
+        }
     }
     public void Login()
     {
