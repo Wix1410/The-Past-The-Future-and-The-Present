@@ -47,6 +47,7 @@ public class Player : MonoBehaviour
         }
         else if (targetPosition != transform.position && hit.collider.gameObject.layer != LayerMask.NameToLayer("Wall"))
         {
+            Debug.Log("Wall touch");
             //Dotkniecie
             float direction = Input.GetAxisRaw("Horizontal");
             //Check object layer
