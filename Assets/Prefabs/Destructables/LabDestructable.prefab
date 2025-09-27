@@ -106,7 +106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doors: {fileID: 0}
-  id: 13
+  id: 12
 --- !u!1 &6007166529573252395
 GameObject:
   m_ObjectHideFlags: 0
@@ -183,7 +183,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8373246286405043845, guid: d1d96298de4ce11478fd15cb14da15f7, type: 3}
+  m_Sprite: {fileID: -6327574607448199279, guid: db66d490613752e47a406dab93de50f8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

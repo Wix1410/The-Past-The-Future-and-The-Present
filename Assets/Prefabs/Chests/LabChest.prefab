@@ -95,8 +95,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: 1
   spriteRenderer: {fileID: 2452360680588891016}
-  openSprite: {fileID: 1972231426, guid: d1d96298de4ce11478fd15cb14da15f7, type: 3}
-  closedSprite: {fileID: 1616454887, guid: d1d96298de4ce11478fd15cb14da15f7, type: 3}
+  openSprite: {fileID: 8868855612475445293, guid: bfb377e30ba973d43845e9c2b10442e0, type: 3}
+  closedSprite: {fileID: -5408805568427825584, guid: bfb377e30ba973d43845e9c2b10442e0, type: 3}
 --- !u!114 &7156470355864615334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -187,7 +187,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1616454887, guid: d1d96298de4ce11478fd15cb14da15f7, type: 3}
+  m_Sprite: {fileID: -5408805568427825584, guid: bfb377e30ba973d43845e9c2b10442e0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
