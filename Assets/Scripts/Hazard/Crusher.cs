@@ -33,6 +33,10 @@ public class Crusher : Falling
 		{
 			fallCount++;
 		}
+		else
+		{
+			fallCount = 0;
+		}
 	}
 
 	private void InstaKill(GameObject gameObject)

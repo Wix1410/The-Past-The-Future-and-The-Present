@@ -1,0 +1,1458 @@
+fileFormatVersion: 2
+guid: 1842dc89da089924a96db515255cdf18
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  importerVersion: 2
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+    generateIndividualEvents: 1
+    generateSpriteAtlas: 1
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+    generateIndividualEvents: 1
+    generateSpriteAtlas: 1
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: EgyptTIleMap_1
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 32
+      height: 32
+    spriteID: 80887bb3751891a4ebee6c769e3d7458
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: EgyptTIleMap_2
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 44
+      width: 32
+      height: 32
+    spriteID: 0599dd6889323014d98a508dae30ac29
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 44}
+  - name: EgyptTIleMap_3
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 84
+      width: 32
+      height: 32
+    spriteID: 2bb6440e5557a7c4fa8e969f115c9918
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 84}
+  - name: EgyptTIleMap_4
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 124
+      width: 32
+      height: 32
+    spriteID: bc233683f5be7674ab4545f283e28f94
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 124}
+  - name: EgyptTIleMap_5
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 164
+      width: 32
+      height: 32
+    spriteID: 565ba56c8a539f145bb2614ba14f9cee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 164}
+  - name: EgyptTIleMap_6
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 204
+      width: 32
+      height: 32
+    spriteID: 11a9106e19b6c1c44b837686c5ba8cfe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 204}
+  - name: EgyptTIleMap_7
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 244
+      width: 32
+      height: 32
+    spriteID: 102b1f71c92441e47910356ad25f0c51
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 244}
+  - name: EgyptTIleMap_8
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 284
+      width: 32
+      height: 32
+    spriteID: ebdd3d8b7bc50ea40b79a88c94ce0be7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 284}
+  - name: EgyptTIleMap_9
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 324
+      width: 32
+      height: 32
+    spriteID: 751630592416b18448aef3b48c8f079b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 324}
+  - name: EgyptTIleMap_10
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 364
+      width: 32
+      height: 32
+    spriteID: aa9c332c778c1104999a6b5c1784d1bd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 364}
+  - name: EgyptTIleMap_11
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 404
+      width: 32
+      height: 32
+    spriteID: b67c6e5718ed70f46a690b39c875d2f2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 404}
+  - name: EgyptTIleMap_12
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 444
+      width: 32
+      height: 32
+    spriteID: c43e61b5a857d0c478b12df779210e5c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 444}
+  - name: EgyptTIleMap_13
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 4
+      width: 32
+      height: 32
+    spriteID: d5ac00b6c646f0546ac8d6fc252305ba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 4}
+  - name: EgyptTIleMap_14
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 44
+      width: 32
+      height: 32
+    spriteID: 15c868a455bcdd44caaf5780799f6e74
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 44}
+  - name: EgyptTIleMap_15
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 84
+      width: 32
+      height: 32
+    spriteID: 1b8df6d97f645164e8aa8a2f09e57ae0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 84}
+  - name: EgyptTIleMap_16
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 124
+      width: 32
+      height: 32
+    spriteID: 4ad45a9c96184d04a973b76645da26cd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 124}
+  - name: EgyptTIleMap_17
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 164
+      width: 32
+      height: 32
+    spriteID: 7b3038f8dfd557043b2d0719d2bbeb97
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 164}
+  - name: EgyptTIleMap_18
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 204
+      width: 32
+      height: 32
+    spriteID: a85c094b29e6a004c85d88e46fdab179
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 204}
+  - name: EgyptTIleMap_19
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 244
+      width: 32
+      height: 32
+    spriteID: 3c09dc2a9faee864b8fe4bd9fee7ef9a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 244}
+  - name: EgyptTIleMap_20
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 284
+      width: 32
+      height: 32
+    spriteID: 9d54141c434128640bb855bca594d8c4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 284}
+  - name: EgyptTIleMap_21
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 324
+      width: 32
+      height: 32
+    spriteID: ae7dfcd46ade21d4d81c4b63be906379
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 324}
+  - name: EgyptTIleMap_22
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 364
+      width: 32
+      height: 32
+    spriteID: b3c8404b080bcb7488773290f13f4a2f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 364}
+  - name: EgyptTIleMap_23
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 404
+      width: 32
+      height: 32
+    spriteID: 66a0be72e69da97429ac797b7646d4ab
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 404}
+  - name: EgyptTIleMap_24
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 444
+      width: 32
+      height: 32
+    spriteID: a61529364d6937b41955a079bbf9b7f4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 444}
+  - name: EgyptTIleMap_25
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 4
+      width: 32
+      height: 32
+    spriteID: 6171f09ca9bf32d45951a410a29d260a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 84, y: 4}
+  - name: EgyptTIleMap_26
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 44
+      width: 32
+      height: 32
+    spriteID: 5b65c460f0353b440a82e8e618261618
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 84, y: 44}
+  - name: EgyptTIleMap_27
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 84
+      width: 32
+      height: 32
+    spriteID: 907c22fc0f19ac94abe66543bb101705
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 84, y: 84}
+  - name: EgyptTIleMap_28
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 124
+      width: 32
+      height: 32
+    spriteID: dacf1eec1a465214299b3cd8da0f03df
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 84, y: 124}
+  - name: EgyptTIleMap_29
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 164
+      width: 32
+      height: 32
+    spriteID: 1e4606d29e5116144abf94d7355134de
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 84, y: 164}
+  - name: EgyptTIleMap_30
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 204
+      width: 32
+      height: 32
+    spriteID: ef28a1c5011cefe419d0d5bba7ea5683
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 84, y: 204}
+  - name: EgyptTIleMap_31
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 244
+      width: 32
+      height: 32
+    spriteID: 3ea5d8106f95bb146b13968bf1596504
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 84, y: 244}
+  - name: EgyptTIleMap_32
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 284
+      width: 32
+      height: 32
+    spriteID: bbdcc107e39f0e64bb1c39617480ec12
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 84, y: 284}
+  - name: EgyptTIleMap_33
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 324
+      width: 32
+      height: 32
+    spriteID: a7b0af9e63039454e9314e78da1a184c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 84, y: 324}
+  - name: EgyptTIleMap_34
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 364
+      width: 32
+      height: 32
+    spriteID: 27265c16780b6104c9fbadbb8977991d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 84, y: 364}
+  - name: EgyptTIleMap_35
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 404
+      width: 32
+      height: 32
+    spriteID: ce9111ebba9976643b637a35e414e133
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 84, y: 404}
+  - name: EgyptTIleMap_36
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 444
+      width: 32
+      height: 32
+    spriteID: 309b1d0fb5ce95e418e293071c6e3673
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 84, y: 444}
+  - name: EgyptTIleMap_37
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 4
+      width: 32
+      height: 32
+    spriteID: e31517e9fd4018a44b4201728eb00eb2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 124, y: 4}
+  - name: EgyptTIleMap_38
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 44
+      width: 32
+      height: 32
+    spriteID: 0c1a2b31dfd7da044a513c95da018331
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 124, y: 44}
+  - name: EgyptTIleMap_39
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 84
+      width: 32
+      height: 32
+    spriteID: e37ec86dd5b498447adaf2d5614c49f3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 124, y: 84}
+  - name: EgyptTIleMap_40
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 124
+      width: 32
+      height: 32
+    spriteID: 424abd2f2dff2c540afd1625ff493d73
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 124, y: 124}
+  - name: EgyptTIleMap_41
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 164
+      width: 32
+      height: 32
+    spriteID: 5e2baf60466636d469408938ad1279bc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 124, y: 164}
+  - name: EgyptTIleMap_42
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 204
+      width: 32
+      height: 32
+    spriteID: e46679f9ff5bf284bbc6a304512c8213
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 124, y: 204}
+  - name: EgyptTIleMap_43
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 244
+      width: 32
+      height: 32
+    spriteID: 3997d9ff81508f847b098494ac9d1e3d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 124, y: 244}
+  - name: EgyptTIleMap_44
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 284
+      width: 32
+      height: 32
+    spriteID: b1404acdb5a32ba45950e13d66ed1eee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 124, y: 284}
+  - name: EgyptTIleMap_45
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 324
+      width: 32
+      height: 32
+    spriteID: 35830f0d3b654c44991f2ceab17c4b5b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 124, y: 324}
+  - name: EgyptTIleMap_46
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 364
+      width: 32
+      height: 32
+    spriteID: 6145f98cc0e2a5d4c9ea1711b8853bc0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 124, y: 364}
+  - name: EgyptTIleMap_47
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 404
+      width: 32
+      height: 32
+    spriteID: 35a5a537da4973949a4464eac2bdfcce
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 124, y: 404}
+  - name: EgyptTIleMap_48
+    originalName: 
+    pivot: {x: 0.46875, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 444
+      width: 32
+      height: 32
+    spriteID: f984eacf6ec76994d916eccfdcc1b3cd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 124, y: 444}
+  spriteSheetImportData: []
+  tileSetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    uuid:
+      value0: 2763448749
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: 0
+    name: Egypt Tile Set
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells: []
+    linkedCells: []
+    tileCells: []
+    tileSetIndex: 0
+    parentIndex: -1
+  tileSets:
+  - id: 0
+    name: EgyptTIleMap
+    tileSize:
+      x: 32
+      y: 32
+    tiles:
+    - tileId: 1
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_1
+      spriteId: 80887bb3751891a4ebee6c769e3d7458
+    - tileId: 2
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_2
+      spriteId: 0599dd6889323014d98a508dae30ac29
+    - tileId: 3
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_3
+      spriteId: 2bb6440e5557a7c4fa8e969f115c9918
+    - tileId: 4
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_4
+      spriteId: bc233683f5be7674ab4545f283e28f94
+    - tileId: 5
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_5
+      spriteId: 565ba56c8a539f145bb2614ba14f9cee
+    - tileId: 6
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_6
+      spriteId: 11a9106e19b6c1c44b837686c5ba8cfe
+    - tileId: 7
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_7
+      spriteId: 102b1f71c92441e47910356ad25f0c51
+    - tileId: 8
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_8
+      spriteId: ebdd3d8b7bc50ea40b79a88c94ce0be7
+    - tileId: 9
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_9
+      spriteId: 751630592416b18448aef3b48c8f079b
+    - tileId: 10
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_10
+      spriteId: aa9c332c778c1104999a6b5c1784d1bd
+    - tileId: 11
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_11
+      spriteId: b67c6e5718ed70f46a690b39c875d2f2
+    - tileId: 12
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_12
+      spriteId: c43e61b5a857d0c478b12df779210e5c
+    - tileId: 13
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_13
+      spriteId: d5ac00b6c646f0546ac8d6fc252305ba
+    - tileId: 14
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_14
+      spriteId: 15c868a455bcdd44caaf5780799f6e74
+    - tileId: 15
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_15
+      spriteId: 1b8df6d97f645164e8aa8a2f09e57ae0
+    - tileId: 16
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_16
+      spriteId: 4ad45a9c96184d04a973b76645da26cd
+    - tileId: 17
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_17
+      spriteId: 7b3038f8dfd557043b2d0719d2bbeb97
+    - tileId: 18
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_18
+      spriteId: a85c094b29e6a004c85d88e46fdab179
+    - tileId: 19
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_19
+      spriteId: 3c09dc2a9faee864b8fe4bd9fee7ef9a
+    - tileId: 20
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_20
+      spriteId: 9d54141c434128640bb855bca594d8c4
+    - tileId: 21
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_21
+      spriteId: ae7dfcd46ade21d4d81c4b63be906379
+    - tileId: 22
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_22
+      spriteId: b3c8404b080bcb7488773290f13f4a2f
+    - tileId: 23
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_23
+      spriteId: 66a0be72e69da97429ac797b7646d4ab
+    - tileId: 24
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_24
+      spriteId: a61529364d6937b41955a079bbf9b7f4
+    - tileId: 25
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_25
+      spriteId: 6171f09ca9bf32d45951a410a29d260a
+    - tileId: 26
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_26
+      spriteId: 5b65c460f0353b440a82e8e618261618
+    - tileId: 27
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_27
+      spriteId: 907c22fc0f19ac94abe66543bb101705
+    - tileId: 28
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_28
+      spriteId: dacf1eec1a465214299b3cd8da0f03df
+    - tileId: 29
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_29
+      spriteId: 1e4606d29e5116144abf94d7355134de
+    - tileId: 30
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_30
+      spriteId: ef28a1c5011cefe419d0d5bba7ea5683
+    - tileId: 31
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_31
+      spriteId: 3ea5d8106f95bb146b13968bf1596504
+    - tileId: 32
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_32
+      spriteId: bbdcc107e39f0e64bb1c39617480ec12
+    - tileId: 33
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_33
+      spriteId: a7b0af9e63039454e9314e78da1a184c
+    - tileId: 34
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_34
+      spriteId: 27265c16780b6104c9fbadbb8977991d
+    - tileId: 35
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_35
+      spriteId: ce9111ebba9976643b637a35e414e133
+    - tileId: 36
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_36
+      spriteId: 309b1d0fb5ce95e418e293071c6e3673
+    - tileId: 37
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_37
+      spriteId: e31517e9fd4018a44b4201728eb00eb2
+    - tileId: 38
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_38
+      spriteId: 0c1a2b31dfd7da044a513c95da018331
+    - tileId: 39
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_39
+      spriteId: e37ec86dd5b498447adaf2d5614c49f3
+    - tileId: 40
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_40
+      spriteId: 424abd2f2dff2c540afd1625ff493d73
+    - tileId: 41
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_41
+      spriteId: 5e2baf60466636d469408938ad1279bc
+    - tileId: 42
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_42
+      spriteId: e46679f9ff5bf284bbc6a304512c8213
+    - tileId: 43
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_43
+      spriteId: 3997d9ff81508f847b098494ac9d1e3d
+    - tileId: 44
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_44
+      spriteId: b1404acdb5a32ba45950e13d66ed1eee
+    - tileId: 45
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_45
+      spriteId: 35830f0d3b654c44991f2ceab17c4b5b
+    - tileId: 46
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_46
+      spriteId: 6145f98cc0e2a5d4c9ea1711b8853bc0
+    - tileId: 47
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_47
+      spriteId: 35a5a537da4973949a4464eac2bdfcce
+    - tileId: 48
+      size:
+        x: 32
+        y: 32
+      name: EgyptTIleMap_48
+      spriteId: f984eacf6ec76994d916eccfdcc1b3cd
+    guid: -693295049
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 544, y: 96}
+  previousTextureSize: {x: 256, y: 512}

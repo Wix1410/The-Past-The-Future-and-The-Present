@@ -75,10 +75,6 @@ public class Player : MonoBehaviour
             {
                 //this is a special case for doors, as they are not interactable directly
             }
-            else if ((hit.collider.gameObject.layer == LayerMask.NameToLayer("Wall")))
-            {
-                //this is a special case for walls, as they are not interactable directly
-            }
             else if ((hit.collider.gameObject.layer == LayerMask.NameToLayer("Chest")))
             {
                 HandleCollisionChests(targetPosition, hit);
