@@ -47,7 +47,6 @@ public class Player : MonoBehaviour
         }
         else if (targetPosition != transform.position && hit.collider.gameObject.layer != LayerMask.NameToLayer("Wall"))
         {
-            Debug.Log("Wall touch");
             //Dotkniecie
             float direction = Input.GetAxisRaw("Horizontal");
             //Check object layer
@@ -81,11 +80,15 @@ public class Player : MonoBehaviour
             }
             else if ((hit.collider.gameObject.layer == LayerMask.NameToLayer("Computer")))
             {
-                HandleCollisionComputer(hit);
+                HandleCollisionComputer(targetPosition, hit);
             }
             else if ((hit.collider.gameObject.layer == LayerMask.NameToLayer("Collectable")))
             {
                 HandleCollisionCoins(targetPosition, hit);
+            }
+            else if ((hit.collider.gameObject.layer == LayerMask.NameToLayer("Dialogue")))
+            {
+                HandleCollisonDialogues(targetPosition);
             }
             else
             {
@@ -204,7 +207,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void HandleCollisionComputer(RaycastHit2D hit)
+    private void HandleCollisionComputer(Vector3 targetPosition, RaycastHit2D hit)
     {
         Computer computer = hit.collider.GetComponent<Computer>();
         if (computer != null)
@@ -212,6 +215,7 @@ public class Player : MonoBehaviour
             computer.pressEPopUp.SetActive(true);
             currentlyInteractedComputer = computer;
         }
+        rb.MovePosition(targetPosition);
     }
 
     private void HandleCollisionCoins(Vector3 targetPosition, RaycastHit2D hit)
@@ -229,5 +233,11 @@ public class Player : MonoBehaviour
     {
         rb.MovePosition(targetPosition);
         Debug.LogError($"[Player] Trigger Not Supported: {hit.collider.gameObject}", hit.collider.gameObject);
+    }
+
+    private void HandleCollisonDialogues(Vector3 targetPosition)
+    {
+        rb.MovePosition(targetPosition);
+        Debug.Log("Dialogues are working");
     }
 }
