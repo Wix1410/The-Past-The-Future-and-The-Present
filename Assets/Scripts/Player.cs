@@ -88,7 +88,7 @@ public class Player : MonoBehaviour
             }
             else if ((hit.collider.gameObject.layer == LayerMask.NameToLayer("Dialogue")))
             {
-                HandleCollisonDialogues(targetPosition);
+                HandleCollisonDialogues(targetPosition, hit);
             }
             else
             {
@@ -215,7 +215,6 @@ public class Player : MonoBehaviour
             computer.pressEPopUp.SetActive(true);
             currentlyInteractedComputer = computer;
         }
-        rb.MovePosition(targetPosition);
     }
 
     private void HandleCollisionCoins(Vector3 targetPosition, RaycastHit2D hit)
@@ -235,9 +234,14 @@ public class Player : MonoBehaviour
         Debug.LogError($"[Player] Trigger Not Supported: {hit.collider.gameObject}", hit.collider.gameObject);
     }
 
-    private void HandleCollisonDialogues(Vector3 targetPosition)
+    private void HandleCollisonDialogues(Vector3 targetPosition, RaycastHit2D hit)
     {
-        rb.MovePosition(targetPosition);
-        Debug.Log("Dialogues are working");
+        DialogueManager dialogueManager = hit.collider.GetComponent<DialogueManager>();
+        if (dialogueManager != null)
+        {
+            rb.MovePosition(targetPosition);
+            dialogueManager.dialogueUI.SetActive(true);
+            Time.timeScale = 0;
+        }
     }
 }

@@ -2,15 +2,20 @@ using UnityEngine;
 
 public class DialogueManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        this.enabled = false;
-    }
+    public GameObject dialogueUI;
+    public GameObject pauseMenu;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            dialogueUI.SetActive(false);
+            Time.timeScale = 1;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        pauseMenu.SetActive(false);
     }
 }
