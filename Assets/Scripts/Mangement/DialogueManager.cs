@@ -7,15 +7,10 @@ public class DialogueManager : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if(Input.GetKeyDown(KeyCode.Mouse0))
         {
             dialogueUI.SetActive(false);
-            Time.timeScale = 1;
+            Time.timeScale = 1.0f;
         }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        pauseMenu.SetActive(false);
     }
 }

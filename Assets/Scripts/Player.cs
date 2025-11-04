@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
 {
     [Header("Bindings")]
     public GameObject pauseMenu;
+    public GameObject dialogueUI;
     public Rigidbody2D rb;
 
     [Header("Movement")]
@@ -236,12 +237,8 @@ public class Player : MonoBehaviour
 
     private void HandleCollisonDialogues(Vector3 targetPosition, RaycastHit2D hit)
     {
-        DialogueManager dialogueManager = hit.collider.GetComponent<DialogueManager>();
-        if (dialogueManager != null)
-        {
-            rb.MovePosition(targetPosition);
-            dialogueManager.dialogueUI.SetActive(true);
-            Time.timeScale = 0;
-        }
+        rb.MovePosition(targetPosition);
+        Time.timeScale = 0;
+        dialogueUI.SetActive(true);
     }
 }
