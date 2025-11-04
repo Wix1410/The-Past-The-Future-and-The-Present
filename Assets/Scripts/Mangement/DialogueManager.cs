@@ -1,3 +1,4 @@
+using NUnit.Framework;
 using TMPro;
 using UnityEngine;
 
@@ -5,11 +6,15 @@ public class DialogueManager : MonoBehaviour
 {
     [Header("Bindings")]
     public GameObject dialogueUI;
-    public GameObject pauseMenu;
     public TMP_Text txt;
 
     [Header("Arrays")]
     string[] dialogue1;
+
+    private void Start()
+    {
+        dialogue1 = new string[] {};
+    }
 
     void Update()
     {
@@ -21,6 +26,7 @@ public class DialogueManager : MonoBehaviour
                 if (i == dialogue1.Length)
                 {
                     dialogueUI.SetActive(true);
+                    Time.timeScale = 1;
                 }
             }
         }
