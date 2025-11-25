@@ -238,7 +238,6 @@ public class Player : MonoBehaviour
     private void HandleCollisonDialogues(Vector3 targetPosition, RaycastHit2D hit)
     {
         rb.MovePosition(targetPosition);
-        Time.timeScale = 0;
         dialogueUI.SetActive(true);
     }
 }

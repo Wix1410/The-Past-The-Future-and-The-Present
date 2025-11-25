@@ -13,7 +13,7 @@ public class DialogueManager : MonoBehaviour
 
     private void Start()
     {
-        dialogue1 = new string[] {};
+        dialogue1 = new string[] {"k", "l"};
     }
 
     void Update()
@@ -26,7 +26,6 @@ public class DialogueManager : MonoBehaviour
                 if (i == dialogue1.Length)
                 {
                     dialogueUI.SetActive(true);
-                    Time.timeScale = 1;
                 }
             }
         }
